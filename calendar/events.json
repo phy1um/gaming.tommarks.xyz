@@ -2,7 +2,7 @@
   "events": [
   
     {
-      "name": "TimCon Duel Cast (opening with Haymo)",
+      "name": "TimCon Duel Cast",
       "game": "Diabotical",
       "type": "Cast",
       "start": "2020-11-07T12:00:00Z",
