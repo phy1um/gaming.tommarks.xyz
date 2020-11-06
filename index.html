@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Tom Marks Talks Games</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1>Tom Marks Talks Games - SITE WIP</h1>
+    <section>
+        <h2>What</h2>
+        <p>I'm a programmer and gamer from Australia making videos, running livestreams and commentating gaming tournaments. 
+            My content focusses on competitive and high-skill games, especially arcade/arena FPS titles (eg Quake).
+        </p>
+    </section>
+    <section>
+        <h2>Where</h2>
+        <ul>
+            <li><a href="https://www.youtube.com/c/phy1umgamer/videos">Youtube Channel</a></li>
+            <li><a href="https://twitch.tv/phylum919">Twitch Streams</a></li>
+            <li><a href="#">My Schedule (TBA)</a></li>
+            <li><a href="https://twitter.com/phy1um">Twitter</a></li>
+        </ul>
+    </section>
+    <section>
+        <h2>How to Support Me</h2>
+        <p>Donations power my content. I prefer direct support through donations or recurring Patreon payments (TBA) over Twitch bits/subscriptions. I curently cannot commit to a
+            regular Twitch schedule.
+        </p>
+        <ul>
+            <li><a href="https://paypal.me/tommarksonline" target="_tab">Send me money on PayPal</a></li>
+        </ul>
+    </section>
+    <section>
+        <h2>Contact</h2>
+        <ul>
+            <li>Email: <a href="#" onclick="makeMailto()" id="mailLink">Click Me</a></li>
+        </ul>
+    </section>
+    <section>
+        <h2>Pages</h2>
+        <ul>
+            <li><a href="tournaments.html">Tournament Results</a></li>
+            <li><a href="casting.html">Casting Experience</a></li>
+        </ul>
+    </section>
+    <script>
+        function makeMailto() {
+            var m = document.getElementById("mailLink");
+            m.innerText = "gaming" + "@";
+            m.innerText += "tommarks.xyz";
+            m.href = "mailto:" + m.innerText;
+        }
+    </script>
+</body>
+
+</html>
