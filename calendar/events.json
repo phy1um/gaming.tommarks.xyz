@@ -1,0 +1,41 @@
+{
+  "events": [
+  
+    {
+      "name": "TimCon Duel Cast (opening with Haymo)",
+      "game": "Diabotical",
+      "type": "Cast",
+      "start": "2020-11-07T12:00:00Z",
+      "until": "2020-11-07T13:30:00Z",
+      "details": "Kicking off the cast to this wonderful duel event with Haymo. $1500 USD in prizes on the line for the players. After 1.5 hours we will be handing over to some other lovely casters.",
+      "links": [
+        {
+          "name": "Tournament Bracket",
+          "href": "https://timcon.challonge.com/mega"
+        },
+        {
+          "name": "Twitch Stream",
+          "href": "#"
+        }
+      ]
+    },
+    
+    {
+      "name": "Kuachi Cups November Circuit Finals",
+      "game": "Diabotical",
+      "type": "Cast",
+      "start": "2020-11-22T17:30:00+11:00",
+      "details": "The final bracket from the November Diabotical 3v3 tournament.",
+      "links": [
+        {
+          "name": "Kuachi Cups Discord",
+          "href": "http://kuachicups.com/discord"
+        },
+        {
+          "name": "Twitch Stream",
+          "href": "http://twitch.tv/kuachicups"
+        }
+      ]
+    }
+  ]
+}

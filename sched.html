@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Tom Marks Talks Games</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1>Schedule</h1>
+    <div id="events-parent"></div>
+    <script>
+      (function() {
+        var par = document.getElementById("events-parent");
+        var now = new Date();
+        // Get offset in ms
+        var toff = now.getTimezoneOffset() * 60 * 1000;
+        fetch("/calendar/events.json").then(d => d.json())
+          .then(d => {
+            for (var i in d.events) {
+              var ev = d.events[i];
+              var event = document.createElement("div");
+              par.appendChild(event);
+              event.className = "event"
+              var h2 = document.createElement("h2");
+              h2.innerText = ev.name;
+              var h3 = document.createElement("h3");
+              var tt = Date.parse(ev.start);
+              console.log("Time: " + ev.start + ", Parsed: " + tt + ", Offset: " + toff);
+              var local_string = (new Date(tt - toff)).toISOString();
+              var parts = local_string.split("T");
+              var local_date = parts[0];
+              var local_time = parts[1].split(".")[0];
+              h3.innerText = `Starting ${local_date} @ ${local_time}`;
+              event.appendChild(h2);
+
+              if(ev.details) {
+                p = document.createElement("p");
+                p.innerText = ev.details;
+                event.appendChild(p);
+              }
+              
+              event.appendChild(h3);
+              
+              if(ev.links) {
+                links = document.createElement("span");
+                links.className = "link-row";
+                for (var l in ev.links) {
+                  ll = ev.links[l];
+                  a = document.createElement("a");
+                  a.href = ll.href;
+                  a.innerText = ll.name;
+                  links.appendChild(a);
+                }
+                event.appendChild(links);
+              }
+            }
+          });
+      })()
+    </script>
+</body>
+
+</html>
