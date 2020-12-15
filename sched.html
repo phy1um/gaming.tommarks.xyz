@@ -18,23 +18,28 @@
         var now = new Date();
         // Get offset in ms
         var toff = now.getTimezoneOffset() * 60 * 1000;
-        fetch("/calendar/events.json").then(d => d.json())
-          .then(d => {
-            for (var i in d.events) {
-              var ev = d.events[i];
-              var event = document.createElement("div");
+        var res = []
+        function put(d) {
+            for (var i in d) {
+              var ev = d[i];
+              var event = document.createElement("section");
               par.appendChild(event);
+              par.appendChild(document.createElement("hr"));
               event.className = "event"
               var h2 = document.createElement("h2");
               h2.innerText = ev.name;
               var h3 = document.createElement("h3");
-              var tt = Date.parse(ev.start);
-              console.log("Time: " + ev.start + ", Parsed: " + tt + ", Offset: " + toff);
-              var local_string = (new Date(tt - toff)).toISOString();
-              var parts = local_string.split("T");
-              var local_date = parts[0];
-              var local_time = parts[1].split(".")[0];
-              h3.innerText = `Starting ${local_date} @ ${local_time}`;
+              try {
+                var tt = Date.parse(ev.start);
+                console.log("Time: " + ev.start + ", Parsed: " + tt + ", Offset: " + toff);
+                var local_string = (new Date(tt - toff)).toISOString();
+                var parts = local_string.split("T");
+                var local_date = parts[0];
+                var local_time = parts[1].split(".")[0];
+                h3.innerText = `Starting ${local_date} @ ${local_time}`;
+              } catch (e) {
+                h3.innerText = `${ev.start}`;
+              }
               event.appendChild(h2);
 
               if(ev.details) {
@@ -58,7 +63,14 @@
                 event.appendChild(links);
               }
             }
-          });
+          }
+        fetch("/calendar/events-2020-12.json").then(d => d.json())
+          .then(d => res = d.events)
+          .then(x => fetch("/calendar/events-2021-01.json"))
+          .then(d => d.json())
+          .then(d => res.concat(d.events))
+          .then(x => put(x));
+
       })()
     </script>
 </body>

@@ -1,0 +1,30 @@
+{
+    "events": [
+        {
+            "name": "Video: QuakeCon Duel Retrospective 2007",
+            "game": "Quake 3 Arena",
+            "type": "Video",
+            "start": "Releases January 5th 2021",
+            "details": "Watching the most boring map from one of the strangest Quake grand finals ever played. QuakeCon 2007 required players to compete across the 4 main Quake titles. This video focusses on the Quake 3 match from their final, with a duel on the classic Campgrounds.",
+            "links": [
+                {
+                    "name": "Video Link",
+                    "href": "#"
+                }
+            ] 
+        },
+        {
+            "name": "KuachiCups January: Diabotical Circuit",
+            "game": "Diabotical",
+            "type": "Cast",
+            "start": "January 2021",
+            "details": "KuachiCups Diabotical returns for 2021 with a to-be-announced lineup of exciting tournaments",
+            "links": [
+                {
+                  "name": "KuachiCups Website",
+                  "href": "https://kuachi.gg"
+                }
+            ]
+        }
+    ]
+}
