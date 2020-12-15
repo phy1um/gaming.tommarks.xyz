@@ -4,11 +4,13 @@ html, body {
     background-color: #eeeeee;
     color: #222;
     font-family: "Open Sans", sans-serif;
+    line-height: 1.42
 }
 
 body {
     width: 70%;
-    margin-left: 15%
+    margin-left: 15%;
+    margin-bottom: 100px;
 }
 
 h1, h2, h3 {
