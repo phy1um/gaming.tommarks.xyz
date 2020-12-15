@@ -49,3 +49,16 @@ hr {
     width: 40%;
     margin-bottom: 50px;
 }
+
+@media only screen and (min-width: 800px) {
+
+    ul.top {
+        display: flex;
+    }
+
+    .top li {
+        flex: 1 1 auto;
+        display: inline-block;
+    }
+
+}
