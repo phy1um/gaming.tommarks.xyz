@@ -64,9 +64,9 @@
               }
             }
           }
-        fetch("/calendar/events-2020-12.json").then(d => d.json())
+        fetch("/calendar/events-2021-02.json").then(d => d.json())
           .then(d => res = d.events)
-          .then(x => fetch("/calendar/events-2021-01.json"))
+          .then(x => fetch("/calendar/events-2021-03.json"))
           .then(d => d.json())
           .then(d => res.concat(d.events))
           .then(x => put(x));
