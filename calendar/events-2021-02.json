@@ -1,7 +1,7 @@
 {
     "events": [
         {
-            "name": "Video: Winning The Worst Perilous Spawn - Zorakwar vs Vedmedik",
+            "name": "Video: Winning The Worst Perilous Spawn - Zorakwar vs Vedmedik (Map 1)",
             "game": "Diabotical",
             "type": "Video",
             "start": "Releases February 16th 2021",
@@ -28,14 +28,34 @@
                 }
             ]
         },
-        {
+	{
             "name": "Video: The Sneakiest Red Armour Frag on Bioplant (Diabotical Community Duel Cast)",
             "game": "Diabotical",
             "type": "Video",
             "start": "Releases February 18th 2021",
             "details": "Kejtos sent me a replay to review. This guy takes insane risks with the PNCR but hits crazy shots to compensate. This is an action packed map with some weird situations, but lots of lessons to take away.",
             "links": [
-                { "name": "Video Link", "href": "TBA" }
+                { "name": "Video Link", "href": "https://youtu.be/w-B3ltupKwg" }
+            ]
+        },
+        {
+            "name": "Video: Waiting For The Frags - Zorakwar vs Vedmedik (Map 2)",
+            "game": "Diabotical",
+            "type": "Video",
+            "start": "Releases February 23rd 2021",
+            "details": "Map 2 of the Diabotical Test Tournament Series, NA Duel Grand Final. Zoarkwar and Vedmedik on Skybreak, one of the smaller, faster maps in the game but struggle to find frags. Lots of back and forward, a very intense game and a great showcase of clashing styles. ",
+            "links": [
+                { "name": "Video Link", "href": "https://youtu.be/6uK8Ox4tdxU" }
+            ]
+        },
+        {
+            "name": "Video: How to Fight on Raya (Backsteen vs Karwik, Diabotical Duel)",
+            "game": "Diabotical",
+            "type": "Video",
+            "start": "Releases February 26th 2021",
+            "details": "A recent grand final map between two very different players. Raya has some amazing spaces to fight in, and these players give a masterclass on how to stage some excellent combat.",
+            "links": [
+                { "name": "Video Link (TBA)", "href": "#" }
             ]
         }
     ]
