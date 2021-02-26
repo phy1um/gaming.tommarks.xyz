@@ -58,5 +58,14 @@ events:
     amazing spaces to fight in, and these players give a masterclass on how to stage
     some excellent combat.
   links:
-  - name: Video Link (TBA)
-    href: "#"
+  - name: Video Link 
+    href: "https://youtu.be/0heU7bpnTbQ"
+
+- name: 'Video: QuakeCon 2007 Retrospective'
+  game: Quake 3 Arena
+  type: Video
+  start: Releases February 28th 2021
+  details: 'Watching the most boring map from one of the strangest Quake grand finals ever played. QuakeCon 2007 required players to compete across the 4 main Quake titles. This video focusses on the Quake 3 match from their final, with a duel on the classic Campgrounds.'
+  links:
+      - name: Video Link (TBA)
+        href: '#'
