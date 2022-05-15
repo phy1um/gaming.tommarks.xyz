@@ -1,4 +1,4 @@
-PAGES="index.md"
+PAGES="index.md casting.md tournaments.md"
 BLOG_FILES="src/blog/*.md"
 BLOG_PREFIX="blog-"
 BLOG_TEMPLATE="blog-template.html"
